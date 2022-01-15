@@ -1,0 +1,42 @@
+
+modLoader="javafml"
+loaderVersion="[36,)" #mandatory This is typically bumped every Minecraft version by Forge. See our download page for lists of versions.
+
+license="All rights reserved"
+
+[[mods]] #mandatory
+
+modId="witherutilities"
+ 
+version="${file.jarVersion}" 
+
+displayName="Wither Utilities"
+
+logoFile="examplemod.png" #optional
+
+credits="Mod by Oxydoras a.k.a. burgwels" #optional
+
+
+# The description text for the mod (multi line!) (#mandatory)
+description='''
+Mod by Oxydoras also known as burgwels.
+'''
+# A dependency - use the . to indicate dependency for a specific modid. Dependencies are optional.
+[[dependencies.witherutilities]] #optional
+
+    modId="forge"
+
+    mandatory=true
+
+    versionRange="[36,)"
+    
+    ordering="NONE"
+
+    side="BOTH"
+
+[[dependencies.witherutilities]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.16.5,1.17)"
+    ordering="NONE"
+    side="BOTH"
